@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Yslks' Assistant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+  <h1 style="margin-left: 110px;">Building Door</h1>
+  <form  class="contact_form"  action="/get" method="get"> 
+    <div>
+      <ul>
+          <li>
+              <h2>Wireless settings</h2>
+              <span class="required_notification">* Datos requeridos</span>
+          </li>
+          <li>
+              <label for="Wireless_SSID">SSID:</label>
+              <input type="text" name="Wireless_SSID" placeholder="Wifi name" value="%Wireless_SSID%" required />
+          </li>
+          <li>
+            <label for="Wireless_Pass">Password:</label>
+            <input type="password" name="Wireless_Pass" placeholder="Password" value="%Wireless_Pass%" required />
+        </li>
+        <li>
+          <h2>MQTT settings</h2>
+      </li>
+      <li>
+          <label for="MQTT_Server">Server:</label>
+          <input type="text" name="MQTT_Server" placeholder="mqtt://192.168.1.2:1883" value="%MQTT_Server%" required />
+      </li>
+      <li>
+        <label for="MQTT_User">User:</label>
+        <input type="text" name="MQTT_User" placeholder="User" value="%MQTT_User%" required />
+    </li>
+      <li>
+        <label for="MQTT_Pass">Password:</label>
+        <input type="password" name="MQTT_Pass" placeholder="Password" value="%MQTT_Pass%" required />
+    </li>
+
+    <li>
+      <h2>BuildingDoor settings</h2>
+  </li>
+  <li>
+      <label for="Door_delay">Delay:</label>
+      <input type="number" name="Door_delay" placeholder="500" value="%Door_delay%" required />
+  </li>
+  <li>
+    <label for="Door_OpenTime">Openning time:</label>
+    <input type="number" name="Door_OpenTime" placeholder="500" value="%Door_OpenTime%" required />
+</li>
+         <li>
+            <button class="submit" type="submit">Save</button>
+        </li>
+    </ul>
+</div>
+  </form>
+</body>
+
+</html>
