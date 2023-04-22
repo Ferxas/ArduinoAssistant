@@ -34,7 +34,7 @@ using namespace TOOLS;
 
 static const char *WIFITAG = "WIFI";
 static const char *TAG = "MQTT_TCP";
-//const char* wifi_network_ssid = ; .
+//const char* wifi_network_ssid = ;
 //const char* wifi_network_password =  ;
 const char *soft_ap_ssid = "ExternalDoor_Cnf";
 //const char *soft_ap_password = NULL;
@@ -152,7 +152,7 @@ void OnWiFiEvent(WiFiEvent_t event)
     default: break;
   }
 }
- 
+ // assistant
  
 void wifi_connection()
 {
